@@ -1,4 +1,12 @@
 Gem::Specification.new do |spec|
+  spec.name          = "clutter-on-travis-ci"
+  spec.version       = "0.0.1"
+  spec.authors       = ["Masafumi Yokoyama"]
+  spec.email         = ["myokoym@gmail.com"]
+  spec.summary       = %q{A test of Ruby/Clutter for Travis-CI}
+  spec.homepage      = "https://github.com/myokoym/clutter-on-travis-ci"
+  spec.license       = "LGPLv2.1"
+
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
